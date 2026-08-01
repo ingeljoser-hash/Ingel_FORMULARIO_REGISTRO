@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <h1 class="main__title">Formulario de Registro</h1>
+      <section class="input">
+        <form class="form">
+          <input type="text" name="fname" placeholder="Ingresa tu nombre" />
+          <input type="text" name="lname" placeholder="Ingresa tu apellido" />
+          <input type="number" name="age" placeholder="Ingresa tu edad" />
+
+          <h2>Selecciona tu género</h2>
+
+          <fieldset>
+            <input type="radio" name="gender" value="F" checked /> Femenina
+            <input type="radio" name="gender" value="M" /> Masculino
+            <input type="radio" name="gender" value="G" /> Uno de los 40 tipos de gay
+          </fieldset>
+
+          <h2>Que es lo que mas te gusta hacer?</h2>
+
+
+          <fieldset>
+            <input type="checkbox" name="hobbies" value="Programar" />Programar
+            <input type="checkbox" name="hobbies" value="Leer" />Leer
+            <input type="checkbox" name="hobbies" value="Jugar" />Jugar videojuegos
+            <input type="checkbox" name="hobbies" value="ver series" />Ver series
+            <input type="checkbox" name="hobbies" value="jugar futbol" />Jugar fútbol
+            <input type="checkbox" name="hobbies" value="jugar basquetbol" />Jugar basquetbol
+             <input type="checkbox" name="hobbies" value="Comer" />Comer
+            <input type="checkbox" name="hobbies" value="Perderme en las notas del alcohol" /><strong>Perderme en las notas del alcohol</strong>
+          </fieldset>
+
+          <h2>Indica tu nacionalidad</h2>
+
+          <select name="nationality">
+  <option value="Alemania">Alemania</option>
+  <option value="Argentina">Argentina</option>
+  <option value="Bolivia">Bolivia</option>
+  <option value="Brasil">Brasil</option>
+  <option value="Canadá">Canadá</option>
+  <option value="Chile">Chile</option>
+  <option value="China">China</option>
+  <option value="Colombia">Colombia</option>
+  <option value="Costa Rica">Costa Rica</option>
+  <option value="Cuba">Cuba</option>
+  <option value="República Dominicana">República Dominicana</option>
+  <option value="Ecuador">Ecuador</option>
+  <option value="El Salvador">El Salvador</option>
+  <option value="España">España</option>
+  <option value="Estados Unidos">Estados Unidos</option>
+  <option value="Francia">Francia</option>
+  <option value="Guatemala">Guatemala</option>
+  <option value="Haití">Haití</option>
+  <option value="Honduras">Honduras</option>
+  <option value="India">India</option>
+  <option value="Inglaterra">Inglaterra</option>
+  <option value="Irlanda">Irlanda</option>
+  <option value="Italia">Italia</option>
+  <option value="Japón">Japón</option>
+  <option value="México">México</option>
+  <option value="Nicaragua">Nicaragua</option>
+  <option value="Panamá">Panamá</option>
+  <option value="Paraguay">Paraguay</option>
+  <option value="Perú">Perú</option>
+  <option value="Portugal">Portugal</option>
+  <option value="Puerto Rico">Puerto Rico</option>
+  <option value="Reino Unido">Reino Unido</option>
+  <option value="Rusia">Rusia</option>
+  <option value="Suiza">Suiza</option>
+  <option value="Uruguay">Uruguay</option>
+  <option value="Venezuela">Venezuela</option>
+</select>
+
+
+         <textarea name="description" placeholder="Cuentanos algo sobre ti..."></textarea>
+
+        
+
+          <button type="submit">Ingresar</button>
+        </form>
+      </section>
+      <section class="output">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Edad</th>
+              <th>Género</th>
+              <th>Hobbies</th>
+              <th>Nacionalidad</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
